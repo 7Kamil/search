@@ -1,16 +1,16 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import MainPage from './pages/MainPage/MainPage';
-import ListPage from './pages/ListPage/ListPage';
+import MainList from './lists/MainList/MainList';
+import ListPage from './lists/ListPage/ListPage';
 
-import './reset.css';
-import './common.css';
+import './reboot.css';
+import './base.css';
 
 class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Route path="/" exact component={MainPage} />
+        <Route path="/" exact component={MainList} />
         <Route path="/list/:id" exact component={ListPage} />
       </div>
     );
