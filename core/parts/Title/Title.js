@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import './Header.css';
+import './Title.css';
 
-class Header extends Component {
+class Title extends Component {
     render() { 
         return (
-            <header className="header">
-                <h1 className="header__title">
+            <title className="title">
+                <h1 className="title__title">
                     MustSee
                 </h1>
-            </header>
+            </title>
         );
     }
 }
  
-export default Header;
+export default Title;
