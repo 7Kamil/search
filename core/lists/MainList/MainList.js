@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import './MainPage.css';
-import Header from '../../components/Header/Header';
-import SearchBox from '../../components/SearchBox/SearchBox';
-import Movies from '../../components/Movies/Movies';
-import Favorites from '../../components/Favorites/Favorites';
+import './MainList.css';
+import Header from '../../parts/Title/Title';
+import SearchBox from '../../parts/FindBox/FindBox';
+import Movies from '../../parts/Films/Films';
+import Favourites from '../../parts/Likes/Likes';
 
 class MainPage extends Component {
     render() { 
         return (
-            <div className="main-page">
+            <div className="main-list">
                 <Header />
-                <main className="main-page__content">
-                    <section className="main-page__main-section">
-                        <div className="main-page__search-box">
+                <main className="main-list__content">
+                    <section className="main-list__main-section">
+                        <div className="main-list__find-box">
                             <SearchBox />
                         </div>
-                        <div className="main-page__movies">
+                        <div className="main-page__films">
                             <Movies />
                         </div>
                     </section>
-                    <aside className="main-page__favorites">
+                    <aside className="main-page__likes">
                         <Favorites />
                     </aside>
                 </main>
@@ -28,4 +28,4 @@ class MainPage extends Component {
     }
 }
  
-export default MainPage;
+export default MainList;
