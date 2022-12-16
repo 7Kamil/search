@@ -35,7 +35,7 @@
     color: rgba(0, 8, 7);
 }
 
-.search-box__form-submit:disabled {
+.find-box__form-submit:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
