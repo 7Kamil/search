@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import MovieItem from '../MovieItem/MovieItem';
-import './Movies.css';
+import FilmItem from '../FilmItem/FilmItem';
+import './Films.css';
 
-class Movies extends Component {
+class Films extends Component {
     state = { 
-        movies: [
+        films: [
             {
                 imdbID: 'tt3896198',
                 title: "Guardians of the Galaxy Vol. 2",
@@ -23,10 +23,10 @@ class Movies extends Component {
     }
     render() { 
         return ( 
-            <ul className="movies">
-                {this.state.movies.map((movie) => (
-                    <li className="movies__item" key={movie.imdbID}>
-                        <MovieItem {...movie} />
+            <ul className="films">
+                {this.state.films.map((film) => (
+                    <li className="films__item" key={film.imdbID}>
+                        <FilmItem {...film} />
                     </li>
                 ))}
             </ul>
@@ -34,4 +34,4 @@ class Movies extends Component {
     }
 }
  
-export default Movies;
+export default Films;
