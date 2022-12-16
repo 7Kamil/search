@@ -5,7 +5,7 @@ import SearchBox from '../../parts/FindBox/FindBox';
 import Movies from '../../parts/Films/Films';
 import Favourites from '../../parts/Likes/Likes';
 
-class MainPage extends Component {
+class MainList extends Component {
     render() { 
         return (
             <div className="main-list">
